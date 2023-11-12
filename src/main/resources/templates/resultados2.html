@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aaa</title>
+</head>
+<body>
+    <ul>
+        <li th:each="item : ${arrayTest}">
+            <input type="checkbox" th:checked="${item.resultado % 2 == 0}" />
+            <span th:text="${item.operacion} + ' = ' + ${item.resultado}"></span>
+        </li>
+    </ul>
+</body>
+</html>
